@@ -1,0 +1,710 @@
+/* Global */
+
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+
+.dropdown-menu li a:hover{
+  background-color:rgba(255, 255, 255, 0.199);
+}
+
+
+.dropdown-menu  a{
+  color: aqua;
+
+}
+
+
+a{
+  color: #eee;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #000000;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  
+}
+
+
+
+.swiper-container {
+
+  background: transparent;
+  border-radius: 25px;
+  transition: border 1s;
+  position: relative;
+  
+  /* height: 1024px; */
+  width: 768px;
+  /* height: calc(110vh - 120px);  */
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+.swiper-container:hover{
+  border: 2px solid #fff;
+
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.slide-inner {
+  width: 1024px;
+  height: 500px;
+  left: 0;  
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  padding-left: 50px;
+  overflow: hidden;
+  
+ 
+}
+
+.slide-inner h1{
+  margin-top: 2%;
+  font-size: 4rem;
+  color: #eee;
+  position: fixed;
+
+}
+
+.slide-inner h3{
+  margin-top: 9%;
+  font-size: 2rem;
+  color: #eee;
+  position: fixed;
+
+
+}
+
+.slide-inner h2{
+  margin-top: 14%;
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity  1s ;
+  position: fixed;
+
+}
+
+.slide-inner p{
+  margin-top: 20%;
+  max-width: 25rem;
+  color:#eee;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 1s;
+  position: fixed;
+}
+.slide-inner:hover h2{
+  opacity: 1;
+  transition: opacity 1s;
+
+}
+.slide-inner:hover p{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+ 
+
+.header { 
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+
+a.btn{
+  margin-top: 40%;
+  background: #000000;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  padding: 6px 30px 8px;
+  position: fixed;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+}
+
+.swiper-slide a.btn{
+  margin-bottom: 10%;
+}
+
+
+
+
+/* The progress container (grey background) */
+/* .progress-container {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: rgb(0, 0, 0);
+} */
+
+/* The progress bar (scroll indicator) */
+/* .progress-bar {
+  position: relative;
+  height: 8px;
+  background: #ffffff;
+  width: 0%;
+} */
+
+/* Fresh Works */
+
+.Freshworks img{
+  filter: contrast(1);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left:47%;
+  z-index: -2;
+  bottom: 68%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.Freshworks:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroGirish{
+  width: 100%;
+  height: 100%;
+  left: 3.4rem;
+  top: 6.3rem;
+  z-index: -1;
+  position: absolute;
+  background:url(images/FreshWorks/Girish.png) center no-repeat ;
+  background-size: 400px;
+  transition: background 0.8s;
+
+
+}
+
+.heroGirish:hover{
+  background:url(images/FreshWorks/Girish.png) top bottom center no-repeat;
+  background-size: 450px;
+  transition: background 0.8s;
+
+}
+
+
+/* Cred */
+
+.Cred img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+  bottom: 78%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Cred:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroKunal{
+  width: 100%;
+  height: 100%;
+  left: 5rem;
+  top: 7rem;
+  z-index: -1;
+  position: absolute;
+  background:url(images/Cred/Kunal_Shah-removebg-preview.png) center no-repeat ;
+  background-size: 650px;
+  transition: background 0.8s;
+
+}
+
+.heroKunal:hover{
+  background:url(images/Cred/Kunal_Shah-removebg-preview.png) center no-repeat;
+  background-size: 700px;
+  transition: background 0.8s;
+
+}
+
+
+/* Ather */
+.Ather img{
+  filter: contrast(1.2);
+  width: 14%;
+  height: 12%;
+  position: absolute;
+  left: 53%;
+  z-index: -2;
+  bottom: 80%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Ather:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.Ather p{
+  max-width: 20rem;
+
+}
+
+.heroTarun{
+  width: 100%;
+  height: 100%;
+  left: 5rem;
+  top: 7rem;
+  z-index: -1;
+  position: absolute;
+  background:url(images/Ather/tarun\ and\ swapnil\ final.png) center no-repeat ;
+  background-size: 550px;
+  transition: background 0.8s;
+
+}
+
+.heroTarun:hover{
+  background:url(images/Ather/tarun\ and\ swapnil\ final.png) center no-repeat;
+  background-size: 600px;
+  transition: background 0.8s;
+  
+}
+
+/* Oyo Rooms */
+
+.Oyo img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+  bottom: 78%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Oyo:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroRitesh{
+  width: 100%;
+  height: 100%;
+  left: 5rem;
+  top: 7rem;
+  z-index: -1;
+  position: absolute;
+  background:url(images/Oyo\ Rooms/Ritesh.png) center no-repeat ;
+  background-size: 650px;
+  transition: background 0.8s;
+
+}
+
+.heroRitesh:hover{
+  background:url(images/Oyo\ Rooms/Ritesh.png) center no-repeat;
+  background-size: 700px;
+  transition: background 0.8s;
+
+}
+
+/* Zomato */
+
+.Zomato img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+  bottom: 78%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Zomato:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroDeep{
+  width: 100%;
+  height: 100%;
+  left: 5rem;
+  top: 7rem;
+  z-index: -1;
+  position: absolute;
+  background:url(images/Zomato/Deepinder.png) center no-repeat ;
+  background-size: 500px;
+  transition: background 0.8s;
+
+}
+
+.heroDeep:hover{
+  background:url(images/Zomato/Deepinder.png) center no-repeat;
+  background-size: 570px;
+  transition: background 0.8s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* A1international */
+/* Google */
+
+
+
+
+.Google p{
+  max-width: 20rem;
+
+}
+.Google img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+  bottom: 78%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Google:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroLS{
+  width: 100%;
+  height: 100%;
+  left: 5rem;
+  top: 7rem;
+  z-index: -1;
+  position: absolute;
+  background:url(Readmore/A1international/Google/larryAndSergeyBW.png) center no-repeat ;
+  background-size: 500px;
+  transition: background 0.8s;
+
+}
+
+.heroLS:hover{
+  background:url(Readmore/A1international/Google/larryAndSergeyBW.png) center no-repeat;
+  background-size: 550px;
+  transition: background 0.8s;
+
+}
+
+/* Apple */
+.Apple img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+  bottom: 78%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Apple:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroSteve{
+  width: 100%;
+  height: 100%;
+  left: 8rem;
+  top: 7.5rem;
+  z-index: -1;
+  position: absolute;
+  background:url(Readmore/A1international/Apple/steveBW.png) center no-repeat ;
+  background-size: 300px;
+  transition: background 0.8s;
+
+}
+
+.heroSteve:hover{
+  background:url(Readmore/A1international/Apple/steveBW.png) center no-repeat;
+  background-size: 340px;
+  transition: background 0.8s;
+
+}
+
+/* Microsoft */
+
+.Microsoft img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+  bottom: 78%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Microsoft:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroBill{
+  width: 100%;
+  height: 100%;
+  left: 5rem;
+  top: 7rem;
+  z-index: -1;
+  position: absolute;
+  background:url(Readmore/A1international/Microsoft/billGatesBW.png) center no-repeat ;
+  background-size: 500px;
+  transition: background 0.8s;
+
+}
+
+.heroBill:hover{
+  background:url(Readmore/A1international/Microsoft/billGatesBW.png) center no-repeat;
+  background-size: 550px;
+  transition: background 0.8s;
+
+}
+
+/* Tesla */
+
+
+.Tesla img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+  bottom: 78%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Tesla:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroElon{
+  width: 100%;
+  height: 100%;
+  left: 5rem;
+  top: 7rem;
+  z-index: -1;
+  position: absolute;
+  background:url(Readmore/A1international/Tesla/elonMuskBW.png) center no-repeat ;
+  background-size: 500px;
+  transition: background 0.8s;
+
+}
+
+.heroElon:hover{
+  background:url(Readmore/A1international/Tesla/elonMuskBW.png) center no-repeat;
+  background-size: 540px;
+  transition: background 0.8s;
+
+}
+
+/* Koenigsegg */
+
+.Koeinegsegg img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+  bottom: 78%;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.Koeinegsegg:hover img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.heroChristian{
+  width: 100%;
+  height: 100%;
+  left: 5rem;
+  top: 7rem;
+  z-index: -1;
+  position: absolute;
+  background:url(Readmore/A1international/Koenisegg/ChristianKBW.png) center no-repeat ;
+  background-size: 500px;
+  transition: background 0.8s;
+
+}
+
+.heroChristian:hover{
+  background:url(Readmore/A1international/Koenisegg/ChristianKBW.png  ) center no-repeat;
+  background-size: 540px;
+  transition: background 0.8s;
+
+}
+
+
+
+
+
+/* Swiper Config */
+
+.swiper-button-next,
+.swiper-button-prev {
+
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+/* Footer */
+.page-footer a{
+  text-decoration: none;
+}
+
+.page-footer{
+  margin-top: 100px;
+}
+
+
+
+/* Text effect Rolling */
+
+.TExt{
+  z-index: 888;
+  min-height: 100px;
+  max-width: 75%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  align-items: center;
+  display: flex;
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  width: 980px;
+  font-size: 100px;
+  font-family: Helvetica;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
+}
+
+.mask {
+  height: 106px;
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--offset);
+}
+
+.mask span {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100px;
+  padding-bottom: var(--offset);
+  
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.mask span[data-show] {
+  transform: translateY(-100%);
+  transition: .5s transform ease-in-out;
+}
+
+.mask span[data-up] {
+  transform: translateY(-200%);
+  transition: .5s transform ease-in-out;
+}
+
+.mask span:nth-child(1) {
+  background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1);
+}
+
+.mask span:nth-child(2) {
+  background-image: linear-gradient(45deg, #18e198 50%, #0ec15d);
+}
+
+.mask span:nth-child(3) {
+  background-image: linear-gradient(45deg, #8a7cfb 50%, #633e9c);
+}
+
+.mask span:nth-child(4) {
+  background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+}
+
+/**
+ * Simple fade transition,
+ */
+
+ body a{
+  font-family: helvetica;
+  color: black;
+  text-transform: uppercase;
+    
+}
+
+
+/* popper */
+
+
