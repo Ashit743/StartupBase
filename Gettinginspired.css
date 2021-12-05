@@ -1,0 +1,71 @@
+h1,h2,h3,h4,p,a{
+    color: white;
+}
+body{
+    background-color: black ;
+}
+
+header{
+    width: 768px;
+    min-height:100px;
+    background-color: rgb(0, 136, 255);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+main{
+    width: 768px;
+    min-height: 200px;
+    background-color: rgb(129, 105, 105);
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.content{
+    height: 200px;
+    width: 500px; 
+}
+
+main .container .row{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content:space-around
+}
+
+
+
+.person{
+    height: 200px;
+    width: 200px;
+
+}
+
+main .container:nth-child(even){
+    background-color: blueviolet;
+}
+
+main .container:nth-child(odd){
+    background-color: rgb(114, 106, 121);
+}
+
+.container:nth-child(even) .person{ 
+    background-color: blue;
+}
+
+.container:nth-child(odd) .person{
+    background-color: rgb(203, 203, 255);
+}
+
+.container:nth-child(odd) .content{
+    background-color: rgb(245, 108, 149);
+}
+
+.container:nth-child(even) .content{
+    background-color: rgb(80, 80, 161);
+}
+
+main .container:nth-child(even) .row{
+    flex-direction: row-reverse;
+}
+

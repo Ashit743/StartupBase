@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 20px;
+}
+
+header {
+  position: relative;
+  z-index: 999;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  transition: 0.5s ease;
+}
+section:nth-child(odd) {
+  background-color: #000000;
+}
+section:nth-child(even){
+  background-color: #1f1e1e;
+}
+section.intro {
+  text-align: center;
+}
+section.intro h2, section.intro h5 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 8vw;
+  font-family: serif;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+body.dragging section {
+  transform: scale(0.7);
+  transform-origin: center center;
+}
+
+
+body.dragging {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+body.dragging .nav-pointer {
+  transition: none;
+}
